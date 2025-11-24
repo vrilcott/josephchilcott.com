@@ -1,0 +1,86 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #222;
+}
+.navbar a { color: white; text-decoration: none; margin-right: 1rem; }
+.navbar a.logo { font-weight: bold; font-size: 1.2rem; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #444;
+  color: #fff;
+}
+.hero .cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0077ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Sections */
+.page-section, .intro {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Portfolio grid */
+.portfolio-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.project-card { background: #fff; padding: 1rem; border-radius: 5px; width: 250px; }
+.project-card img { width: 100%; border-radius: 5px; }
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.contact-form input, .contact-form textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.contact-form button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
