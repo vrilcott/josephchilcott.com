@@ -1,190 +1,214 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+/* ===============================
+   MINIMAL BUSINESS TIMES NEW ROMAN
+   =============================== */
 
-/* Body */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+/* ===============================
+   BASE STYLES
+   =============================== */
+
+html, body {
+  background: #ffffff;
+  color: #111;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ===============================
+   LINKS
+   =============================== */
+
+a {
+  color: #003366; /* Dark blue for business feel */
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #0055aa;
+  background: #e6f0ff;
+}
+
+/* ===============================
+   NAVBAR
+   =============================== */
+
+.navbar {
+  border-bottom: 2px solid #003366;
+  padding: 12px 15px;
   background: #f9f9f9;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #222;
+.navbar a.logo {
+  font-weight: bold;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  color: #003366;
 }
-.navbar a { color: white; text-decoration: none; margin-right: 1rem; }
-.navbar a.logo { font-weight: bold; font-size: rem 1.2; }
 
-/* Hero */
+.navbar ul {
+  display: inline;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 15px;
+}
+
+/* ===============================
+   HERO
+   =============================== */
+
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: #444;
-  color: #fff;
-}
-.hero .cta-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: #0077ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
+  margin: 25px;
+  padding: 20px;
+  border-left: 5px solid #003366;
+  background: #f5f8fb;
 }
 
-/* Sections */
-.page-section, .intro {
-  padding: 2rem;
-  text-align: center;
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #003366;
 }
 
-/* Portfolio grid */
-.portfolio-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 2rem;
-}
-.project-card { background: #fff; padding: 1rem; border-radius: 5px; width: 250px; }
-.project-card img { width: 100%; border-radius: 5px; }
-
-/* Contact form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  gap: 1rem;
-}
-.contact-form input, .contact-form textarea {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-}
-.contact-form button {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 4px;
-  background: #0077ff;
-  color: white;
-  cursor: pointer;
-}
-
-/* Footer */
-footer {
-  background: #366a9d;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-
-
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+.hero p {
+  max-width: 70ch;
   color: #333;
 }
 
-/* About section styling */
+/* ===============================
+   BUTTONS
+   =============================== */
+
+.btn,
+button {
+  background: #003366;
+  color: #fff;
+  border: 1px solid #002244;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 14px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover,
+button:hover {
+  background: #0055aa;
+  border-color: #003366;
+}
+
+/* ===============================
+   ABOUT SECTION
+   =============================== */
+
 .about {
-  max-width: 900px;       /* limits line length for readability */
-  margin: 2rem auto;      /* centers the section with vertical spacing */
-  padding: 1rem 2rem;     /* adds space inside the section */
-  background-color: #fff;  /* optional: subtle contrast from page background */
-  border-radius: 8px;      /* rounded corners for a modern look */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* soft shadow for depth */
+  margin: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-left: 3px solid #003366;
 }
 
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #222;
-}
-
+.about h2,
 .about h3 {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #555;
+  font-size: 1.2rem;
+  margin: 15px 0 5px 0;
+  color: #003366;
 }
 
 .about p {
-  margin-bottom: 1rem;
+  max-width: 70ch;
+  margin-bottom: 10px;
 }
 
 .about ul {
   list-style-type: disc;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  margin-left: 30px;
 }
 
+.about li {
+  margin-bottom: 4px;
+}
 
+/* ===============================
+   PAGE / CONTACT SECTIONS
+   =============================== */
 
-
+.page-section,
 .contact-section {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.contact-section h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.contact-section p {
-  margin-bottom: 1.5rem;
-  color: #555;
-}
-
-.contact-links {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
+  margin: 20px;
+  padding: 15px;
+  background: #f5f8fb;
+  border-left: 3px solid #003366;
 }
 
 .contact-links li {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+  margin-bottom: 6px;
 }
 
-.contact-links a {
-  color: var(--primary-color, #0077ff);
-  text-decoration: none;
-  font-weight: bold;
+/* ===============================
+   FORMS
+   =============================== */
+
+.contact-form {
+  max-width: 500px;
 }
 
-.contact-links a:hover {
-  text-decoration: underline;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid #003366;
+  padding: 6px;
+  font-family: inherit;
+  margin-bottom: 10px;
+  background: #fff;
+  color: #111;
+  border-radius: 3px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 15px 20px;
-  background-color: #0077cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.contact-form textarea {
+  min-height: 120px;
 }
 
-.btn:hover {
-  background-color: #005fa3;
+/* ===============================
+   SEPARATORS
+   =============================== */
+
+hr {
+  border: none;
+  border-top: 1px solid #003366;
+  margin: 20px 0;
 }
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+  border-top: 2px solid #003366;
+  padding: 12px;
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+  background: #f9f9f9;
+  color: #003366;
+}
+
