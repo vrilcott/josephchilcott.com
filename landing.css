@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: #ffffff;
+  color: #000;
+}
+
+main {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}

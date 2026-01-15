@@ -11,10 +11,7 @@
   font-family: "Times New Roman", Times, serif !important;
 }
 
-/* ===============================
-   BASE STYLES
-   =============================== */
-
+/* BASE STYLES */
 html, body {
   background: #ffffff;
   color: #111;
@@ -22,12 +19,9 @@ html, body {
   line-height: 1.5;
 }
 
-/* ===============================
-   LINKS
-   =============================== */
-
+/* LINKS */
 a {
-  color: #003366; /* Dark blue for business feel */
+  color: #003366;
   text-decoration: underline;
   transition: all 0.2s ease;
 }
@@ -41,10 +35,7 @@ a:hover {
   background: #e6f0ff;
 }
 
-/* ===============================
-   NAVBAR
-   =============================== */
-
+/* NAVBAR */
 .navbar {
   border-bottom: 2px solid #003366;
   padding: 12px 15px;
@@ -68,10 +59,7 @@ a:hover {
   margin-right: 15px;
 }
 
-/* ===============================
-   HERO
-   =============================== */
-
+/* HERO */
 .hero {
   margin: 25px;
   padding: 20px;
@@ -91,10 +79,7 @@ a:hover {
   color: #333;
 }
 
-/* ===============================
-   BUTTONS
-   =============================== */
-
+/* BUTTONS */
 .btn,
 button {
   background: #003366;
@@ -102,12 +87,10 @@ button {
   border: 1px solid #002244;
   padding: 6px 12px;
   text-decoration: none;
-  font-family: inherit;
   font-size: 14px;
   margin-top: 10px;
   display: inline-block;
   border-radius: 3px;
-  transition: all 0.2s ease;
 }
 
 .btn:hover,
@@ -116,10 +99,7 @@ button:hover {
   border-color: #003366;
 }
 
-/* ===============================
-   ABOUT SECTION
-   =============================== */
-
+/* ABOUT */
 .about {
   margin: 20px;
   padding: 15px;
@@ -127,81 +107,7 @@ button:hover {
   border-left: 3px solid #003366;
 }
 
-.about h2,
-.about h3 {
-  font-size: 1.2rem;
-  margin: 15px 0 5px 0;
-  color: #003366;
-}
-
-.about p {
-  max-width: 70ch;
-  margin-bottom: 10px;
-}
-
-.about ul {
-  list-style-type: disc;
-  margin-left: 30px;
-}
-
-.about li {
-  margin-bottom: 4px;
-}
-
-/* ===============================
-   PAGE / CONTACT SECTIONS
-   =============================== */
-
-.page-section,
-.contact-section {
-  margin: 20px;
-  padding: 15px;
-  background: #f5f8fb;
-  border-left: 3px solid #003366;
-}
-
-.contact-links li {
-  margin-bottom: 6px;
-}
-
-/* ===============================
-   FORMS
-   =============================== */
-
-.contact-form {
-  max-width: 500px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid #003366;
-  padding: 6px;
-  font-family: inherit;
-  margin-bottom: 10px;
-  background: #fff;
-  color: #111;
-  border-radius: 3px;
-}
-
-.contact-form textarea {
-  min-height: 120px;
-}
-
-/* ===============================
-   SEPARATORS
-   =============================== */
-
-hr {
-  border: none;
-  border-top: 1px solid #003366;
-  margin: 20px 0;
-}
-
-/* ===============================
-   FOOTER
-   =============================== */
-
+/* FOOTER */
 footer {
   border-top: 2px solid #003366;
   padding: 12px;
@@ -211,4 +117,3 @@ footer {
   background: #f9f9f9;
   color: #003366;
 }
-
